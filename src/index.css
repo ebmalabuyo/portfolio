@@ -104,6 +104,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 30vw;
+  min-width: 5rem;
 }
 
 .intro--title {
@@ -112,11 +113,11 @@ body {
 
 .intro--pic {
   width: 20vw;
-  border-radius: 6rem;
+  border-radius: 10%;
 }
 
-.Home--text {
-
+.intro--pic:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,11 +142,10 @@ body {
 @media only screen and (max-width: 850px) {
   .toggle-button {
     display: flex;
-  
   }
   
   .nav--items {
-    /* display: none; */
+    display: flex;
     width: 100%;
   }
   

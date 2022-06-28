@@ -54,15 +54,27 @@ body {
   list-style: none;
   gap: 1.5rem;
 }
+.nav--items li {
+  height: 100%;
+  border-radius: 20%;
+  transition: transform 0.2s;
+}
 
 .nav--items li:hover {
   background-color: rgb(247, 244, 247);
+  transform: scale(1.1);
 }
 
 .nav--title {
   margin: .5rem;
   font-size: 1.5rem;
   color: rgb(227, 115, 115);
+  transition: transform 0.2s;
+  
+}
+
+.nav--title:hover {
+  transform: scale(1.1);
 }
 
 .nav ul li a {
@@ -108,12 +120,19 @@ body {
 }
 
 .intro--title {
-  color: rgb(227, 115, 115);;
+  color: rgb(227, 115, 115);
+  transition: transform 0.2s;
+  
+}
+.intro--title:hover {
+  transform: scale(1.1);
 }
 
 .intro--pic {
-  width: 20vw;
-  border-radius: 10%;
+  width: 270px;
+  border-radius: 90%;
+  transition: transform 0.2s;
+
 }
 
 .intro--pic:hover {

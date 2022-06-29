@@ -15,79 +15,7 @@ body {
   font-family: Inter , sans-serif;
 }
 
-.nav {
-  /* outline: solid black; */
-  /* background: rgb(208, 196, 196); */
-  display: flex;
-  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
-  color: black;
-  background: white;
-  margin-bottom: 12px;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  width: 100%;
-}
 
-.toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: black;
-  border-radius: 10px;
-}
-
-.nav--items {
-  /* outline: black solid; */
-  margin-right: 1rem;
-}
-
-.nav--items ul {
-  margin: 0;
-  display: flex;
-  padding: 0;
-  list-style: none;
-  gap: 1.5rem;
-}
-.nav--items li {
-  height: 100%;
-  border-radius: 20%;
-  transition: transform 0.2s;
-}
-
-.nav--items li:hover {
-  background-color: rgb(247, 244, 247);
-  transform: scale(1.25);
-}
-
-.nav--title {
-  margin: .5rem;
-  font-size: 1.5rem;
-  color: rgb(227, 115, 115);
-  transition: transform 0.2s;
-  
-}
-
-.nav--title:hover {
-  transform: scale(1.1);
-}
-
-.nav ul li a {
-  text-decoration: none;
-  color:black;
-  display: block;
-  padding: 1rem;
-}
  
 .Home {
   background-image: url('./images/jump.JPG');
@@ -149,7 +77,7 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: .2fr .3fr 2fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
   
 }
 
@@ -162,14 +90,19 @@ body {
 } 
 
 .bubble {
-  background-color: rgb(243, 243, 243);
   border-radius: 9%;
   padding: 5%;
   min-height: 35%;
   /* max-width: 100%; */
   min-width: 75%;
   box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 
+}
+
+.bubble:hover {
+  background-color: rgb(243, 243, 243);
+  transform: scale(1.1);
 }
 
 .bubble--list {
@@ -177,10 +110,16 @@ body {
   /* outline: solid; */
   min-width: 85%;
   max-width: 95%;
+  font-size: medium;
+}
+
+.bubble-desc {
+  font-style: oblique;
 }
 
 .bubble--title {
   color: rgb(227, 115, 115);
+  
 }
 
 

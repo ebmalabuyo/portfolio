@@ -2,7 +2,6 @@ import React from "react"
 import './App.js';
 import Navbar from "./components/nav"
 import Intro from "./components/intro.js";
-import jump from './images/jump.JPG'
 import Bubble from "./components/projects.js";
 import project_info from "./project_info.js";
 

@@ -1,0 +1,108 @@
+.nav {
+    /* outline: solid black; */
+    /* background: rgb(208, 196, 196); */
+    display: flex;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+    color: black;
+    background: white;
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  
+.nav--title {
+    color: rgb(227, 115, 115);
+    justify-self: start;
+    margin-left: 1.5rem;
+    transition: transform 0.3s;
+  }
+
+.nav--title:hover {
+    transform: scale(1.2);
+}
+  
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align:left;
+    padding: 0;
+
+  }
+
+.nav--links {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: transform 0.3s;
+  }
+  
+.nav--links:hover {
+    background-color: rgb(227, 218, 218) ;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+  }
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu--icon {
+    display: none;
+
+}
+
+@media screen and (max-width: 860px) {
+    .nav {
+        position: relative;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        right: 200%;
+        opacity: 1;
+        transition: all 0.6s ease;
+        height: 16.5rem;
+    }
+
+    .nav-menu.active {
+        background: rgb(255, 255, 255);
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav--links {
+        text-align: center;
+        padding: 1rem;
+        display: table;
+        width: 100%;
+    }
+
+    .nav--links:hover {
+        background-color: rgb(227, 218, 218) ;
+        border-radius: 10px;
+    }
+    .menu--icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 9.5px .5px;
+    }
+
+    .nav--title {
+        margin-left: 0;
+    }
+}

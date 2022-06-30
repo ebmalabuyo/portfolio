@@ -1,0 +1,44 @@
+.work--cont {
+    display: flex;
+    justify-content: center;
+}
+
+.exp--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    line-height: 1.5rem;
+    background-color: rgb(227, 115, 115);
+    border-radius: 27%;
+    font-size: 1rem
+}
+
+.exp {
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.exp--list {
+    text-align: center;
+    line-height: 120%;
+}
+
+.exp--item {
+    max-width: 80%;
+}
+.fa-arrow-left-long {
+    border: red solid;
+    width: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    .exp {
+        font-size: medium;
+    }
+    .exp--info {
+        font-size: smaller;
+    }
+}

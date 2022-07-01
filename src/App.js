@@ -5,7 +5,8 @@ import Intro from "./components/intro.js";
 import Bubble from "./components/projects.js";
 import project_info from "./project_info.js";
 import work_info from "./work_info.js";
-import "./components/work_style.css"
+// import "./components/work_style.css"
+import "./worky.css"
 import Work from "./components/work.js";
 
 export default function App() {

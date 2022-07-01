@@ -12,16 +12,18 @@ export default function Work(props) {
 
     return (
         <div className="work--items">
-            <FontAwesomeIcon className="arrow" onClick={props.handleClick2} icon={faArrowAltCircleLeft} />
-            <div className="jobs">
-            <h3 className="work--title">{props.title}</h3>
-            <h4 className="work--desc">{props.desc}</h4>
-            <ul className="work--list">
-                <li>{props.b1}</li>
-                <li>{props.b2}</li>
-            </ul>
+            <FontAwesomeIcon className="arrow-left" onClick={props.handleClick2} icon={faArrowAltCircleLeft} />
+            <div className="cont--info">
+                <div className="jobs">
+                <h3 className="work--title">{props.title}</h3>
+                <h4 className="work--desc">{props.desc}</h4>
+                <ul className="work--list">
+                    <li>{props.b1}</li>
+                    <li>{props.b2}</li>
+                </ul>
+                </div>
             </div>
-            <FontAwesomeIcon className="arrow" onClick={props.handleClick} icon={faArrowAltCircleRight} />
+            <FontAwesomeIcon className="arrow-right" onClick={props.handleClick} icon={faArrowAltCircleRight} />
         </div>
     )
 

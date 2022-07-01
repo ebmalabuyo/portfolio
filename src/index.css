@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  outline: solid red;
+  /* outline: solid red; */
   font-weight: 600;
 }
 hr{

@@ -21,6 +21,6 @@ export default [
         b1:"Direct creative vision for one of Cal Poly's largest, annual, student-run events with 1,500+ attendees",
         b2:'Coordinate communication for 15+ campus dance organizations to ensure seamless participation in the showcase',
         b3:'Delegate tasks and responsibilities effectively among 20 members of the committee to keep event planning on schedule within 10 weeks'
-    },
+    }
 
 ]

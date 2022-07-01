@@ -89,7 +89,7 @@ body {
 .projects--cont {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-  grid-template-rows: .2fr .3fr 2fr 1fr;
+  grid-template-rows: .2fr .3fr 2fr .3fr;
   gap: 2rem;
   
 }
@@ -102,10 +102,17 @@ body {
   font-size: xx-large;
   transition: transform 0.2s;
   width: 90%;
+
 } 
 
 .projects--title:hover {
   transform: scale(1.06);
+}
+
+.projects--link {
+  text-decoration: none;
+  color: none;
+
 }
 
 .bubble {
@@ -131,10 +138,12 @@ body {
   min-width: 85%;
   max-width: 95%;
   font-size: medium;
+  color: black;
 }
 
 .bubble-desc {
   font-style: oblique;
+  color: black;
 }
 
 .bubble--title {
@@ -214,6 +223,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 5fr;
     place-items: center;
+    margin-bottom: 13%;
   
   }
   

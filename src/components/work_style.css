@@ -1,44 +1,55 @@
 .work--cont {
+    margin-top: 3%;
+    padding: 2%;
     display: flex;
     justify-content: center;
+    font-size: 1rem;
+
 }
 
-.exp--info {
+.work--items {
     display: flex;
-    flex-direction: column;
+    gap: 5%;
     align-items: center;
-    width: 60%;
-    line-height: 1.5rem;
-    background-color: rgb(227, 115, 115);
-    border-radius: 27%;
-    font-size: 1rem
 }
 
-.exp {
-    border: solid black;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.jobs {
+    max-width: 27rem;
+    max-height: 40rem;
+    min-height: 19rem;
+    font-size: medium;
+    padding: 7%;
+    background-color: rgb(227, 115, 115);;
+    border-radius: 50%;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.8);
+
 }
 
-.exp--list {
+.arrow {
+    height: 5%;
+}
+.work--title, .work--desc {
     text-align: center;
-    line-height: 120%;
 }
 
-.exp--item {
-    max-width: 80%;
-}
-.fa-arrow-left-long {
-    border: red solid;
-    width: 40px;
-}
 
 @media only screen and (max-width: 700px) {
-    .exp {
-        font-size: medium;
-    }
-    .exp--info {
-        font-size: smaller;
+    .work--cont {
+        margin-top: 10%;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .jobs {
+        font-size: small;
+        max-height: 25rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .jobs {
+        font-size: x-small;
+        padding: 10%;
+    }
+}
+

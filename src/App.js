@@ -4,12 +4,11 @@ import Navbar from "./components/nav"
 import Intro from "./components/intro.js";
 import Bubble from "./components/projects.js";
 import project_info from "./project_info.js";
-import Work from './components/work'
 import work_info from "./work_info.js";
 import "./components/work_style.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Work from "./components/work.js";
 
-function App() {
+export default function App() {
 
 
   //map through the bubble components
@@ -19,13 +18,34 @@ function App() {
     />
   })
 
+  /// for the work experiecne flip through section 
+  var [num, setNum] = React.useState(0)
+  const [info, setInfo] = React.useState(work_info)
 
+  function plusOne() {
+    setNum(prevState => {
+      if (prevState === 2) {
+        return 0
+      } else {
+      return (prevState + 1)
+      };
+    })
+  }
+
+  function MinusOne() {
+    setNum(prevState => {
+      if (prevState === 0) {
+        return info.length - 1
+      } else {
+      return (prevState - 1)
+      };
+    })
+  }
 
   return (
     <div>
       <Navbar />
       <div className="Home">
-        {/* <h1 className="welcome">Welcome!</h1> */}
       </div>
       <Intro />
       <hr></hr>
@@ -33,11 +53,16 @@ function App() {
         <h2 className="projects--title">Projects <span role = 'img'>🖥️</span></h2>
         {projectBubbles}
       </div>
+      <hr></hr>
       <div className="work--cont">
-      <i className="fa-solid fa-arrow-left-long"></i>
+      <Work 
+        title = {info[num].title}
+        desc = {info[num].desc}
+        b1 = {info[num].b1}
+        b2 = {info[num].b2}
+        handleClick = {plusOne}
+        handleClick2 = {MinusOne}
+        />
       </div>
     </div>
-  );
-}
-
-export default App;
+  );}

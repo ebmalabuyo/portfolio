@@ -98,9 +98,10 @@ body {
 .projects--cont {
   display: grid;
   grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
-  grid-template-rows: .2fr .3fr 2fr .3fr;
+  grid-template-rows: .15fr .2fr 2fr .3fr;
   gap: 2rem;
   
+
 }
 
 .projects--title {
@@ -110,13 +111,10 @@ body {
   color: rgb(227, 115, 115);
   font-size: xx-large;
   transition: transform 0.2s;
-  width: 90%;
+  width: 100%;
+
 
 } 
-
-.projects--title:hover {
-  transform: scale(1.06);
-}
 
 .projects--link {
   text-decoration: none;
@@ -176,6 +174,12 @@ body {
   grid-row: 3;
 }
 
+.experi {
+  text-align: center;
+  margin-top: 5%;
+  color: rgb(227, 115, 115);
+  margin-bottom: 0;
+}
 
 @media only screen and (max-width: 700px) {
 .intro--cont {
@@ -219,9 +223,10 @@ body {
   font-size: small;
 }
 
-.projects--title {
-  font-size: 108%;
-}
+/* .projects--title {
+  font-size: 100%;
+  outline: solid red;
+} */
 
 }
 

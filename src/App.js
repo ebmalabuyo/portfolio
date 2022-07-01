@@ -55,6 +55,7 @@ export default function App() {
         {projectBubbles}
       </div>
       <hr></hr>
+      <h1 className="experi">Experience 👔</h1>
       <div className="work--cont">
       <Work 
         title = {info[num].title}

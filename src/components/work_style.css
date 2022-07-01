@@ -1,33 +1,59 @@
 .work--cont {
     margin-top: 3%;
-    padding: 2%;
     display: flex;
     justify-content: center;
     font-size: 1rem;
-
+    min-width: 100%;
 }
 
 .work--items {
     display: flex;
-    gap: 5%;
-    align-items: center;
+    gap: 3%;
+    align-items: center; 
+    justify-content: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    font-size: 80%;
+
 }
 
 .jobs {
-    max-width: 27rem;
-    max-height: 40rem;
-    min-height: 19rem;
-    font-size: medium;
-    padding: 7%;
+    max-width: 100%;
+    max-height: 50%;
+    min-height: 30%;
+    font-size: 80%;
+    padding: 3%;
     background-color: rgb(227, 115, 115);;
     border-radius: 50%;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.work--list {
+    line-height: 180%;
+    /* margin: 0; */
 }
 
 .arrow {
     height: 5%;
+    padding: 0;
+    margin:0;
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: black;
 }
+
+.arrow:hover {
+    transform: scale(1.2);
+}
+
 .work--title, .work--desc {
     text-align: center;
 }
@@ -41,15 +67,16 @@
 
 @media only screen and (max-width: 600px) {
     .jobs {
-        font-size: small;
-        max-height: 25rem;
+        font-size: 60%;
+        max-height: 90%;
+        max-width: 70%;
     }
 }
 
 @media only screen and (max-width: 300px) {
     .jobs {
-        font-size: x-small;
-        padding: 10%;
+        padding: 2%;
+        font-size: 46%;
     }
 }
 

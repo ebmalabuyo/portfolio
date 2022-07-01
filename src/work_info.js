@@ -21,6 +21,14 @@ export default [
         b1:"Direct creative vision for one of Cal Poly's largest, annual, student-run events with 1,500+ attendees",
         b2:'Coordinate communication for 15+ campus dance organizations to ensure seamless participation in the showcase',
         b3:'Delegate tasks and responsibilities effectively among 20 members of the committee to keep event planning on schedule within 10 weeks'
+    },
+
+    {
+        title:'Equipment/Packaging Associate',
+        desc:'HD Supply Inc',
+        b1:"Lead the facility in packaging numbers, processing 100+ orders daily to meet company’s monthly quota",
+        b2:'Achieved exceptional levels of customer satisfaction through timely, accurate processing and shipping of orders',
+        b3:'Adapted to the facilities fast-paced environment, switching in between tasks while maintaining quality work'
     }
 
 ]

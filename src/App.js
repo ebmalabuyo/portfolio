@@ -24,7 +24,7 @@ export default function App() {
 
   function plusOne() {
     setNum(prevState => {
-      if (prevState === 2) {
+      if (prevState === info.length - 1) {
         return 0
       } else {
       return (prevState + 1)
@@ -63,6 +63,9 @@ export default function App() {
         handleClick = {plusOne}
         handleClick2 = {MinusOne}
         />
+      </div>
+      <div className="skills">
+        <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>
       </div>
     </div>
   );}

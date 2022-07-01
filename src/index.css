@@ -3,7 +3,7 @@
 
 * {
   box-sizing: border-box;
-  /* outline: solid red; */
+  outline: solid red;
   font-weight: 600;
 }
 hr{
@@ -11,6 +11,15 @@ hr{
   color: gray;
   width: 75%;
   background-color: gray;
+}
+
+b {
+  color: rgb(227, 115, 115);
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
 }
 
 #root {

@@ -8,6 +8,8 @@ import work_info from "./work_info.js";
 // import "./components/work_style.css"
 import "./worky.css"
 import Work from "./components/work.js";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 
 export default function App() {
 
@@ -23,28 +25,22 @@ export default function App() {
   var [num, setNum] = React.useState(0)
   const [info, setInfo] = React.useState(work_info)
 
-  function plusOne() {
-    setNum(prevState => {
-      if (prevState === info.length - 1) {
-        return 0
-      } else {
-      return (prevState + 1)
-      };
-    })
-  }
 
-  function MinusOne() {
-    setNum(prevState => {
-      if (prevState === 0) {
-        return info.length - 1
-      } else {
-      return (prevState - 1)
-      };
-    })
-  }
+  const newInfo = info.map(item => {
+    return (
+      <Work
+      title = {item.title}
+      desc = {item.desc}
+      b1 = {item.b1}
+      b2 = {item.b2}
+      />
+    )
+  })
 
+  // slider card and slider
+  //slider needs to 
   return (
-    <div>
+    <div className="big--cont">
       <Navbar />
       <div className="Home">
       </div>
@@ -56,18 +52,20 @@ export default function App() {
       </div>
       <hr></hr>
       <h1 className="experi">Experience 👔</h1>
-      <div className="work--cont">
-      <Work 
-        title = {info[num].title}
-        desc = {info[num].desc}
-        b1 = {info[num].b1}
-        b2 = {info[num].b2}
-        handleClick = {plusOne}
-        handleClick2 = {MinusOne}
-        />
+      <div className="bigger-cont">
+      <div className="main-slider-cont">
+          <FontAwesomeIcon className="arrow-left" icon={faArrowAltCircleLeft} />
+            <div className="slider">
+              {newInfo}
+            </div>
+          <FontAwesomeIcon className="arrow-right"  icon={faArrowAltCircleRight} />
       </div>
       <div className="skills">
         <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>
       </div>
+      </div>
+      <footer>
+
+      </footer>
     </div>
   );}

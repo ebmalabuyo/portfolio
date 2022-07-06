@@ -4,7 +4,7 @@ export default function Bubble(props) {
     
     return (
         <div className="bubble">
-            <a className="projects--link" href="https://www.google.com/">
+            <a className="projects--link" href={props.thing.url}>
             <h3 className="bubble--title">{props.thing.title}</h3>
             <h4 className="bubble-desc">{props.thing.desc}</h4>
             <ul className="bubble--list">

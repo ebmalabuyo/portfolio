@@ -4,7 +4,7 @@
     display: flex;
     box-shadow: 0px 2.98256px 7.4564px rgba(.2, .1, .5, 1);
     color: black;
-    background: rgb(251, 183, 183);
+    background:white;
     margin-bottom: 12px;
     justify-content: space-between;
     align-items: center;
@@ -15,15 +15,15 @@
   }
   
 .nav--title {
-    color: black;
+    color: rgb(227, 115, 115);
     justify-self: start;
     margin-left: 1.5rem;
     transition: transform 0.3s;
     background-color: white;
-    border-radius: 45%;
+    /* border-radius: 45%; */
     padding: 1%;
     text-align: center;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, .2);
+    /* box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, .2); */
   }
 
 .nav--title:hover {
@@ -47,7 +47,7 @@
   }
   
 .nav--links:hover {
-    background-color: white ;
+    background-color: rgb(227, 115, 115);
     border-radius: 5px;
     transition: all 0.2s ease-out;
   }

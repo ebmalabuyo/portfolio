@@ -12,7 +12,7 @@ export default [
         title:'Text File Data Compression',
         desc:'Python',
         b1:'Programmed an algorithm utilizing Huffman coding to compress text files',
-        b2:'Built binary search tree and circular linked list to track each character and its frequency within a text',
+        b2:'Utilized binary search tree and circular linked list as effecient data structures to track each character and its frequency within a text',
         b3:'Developed 5+ functions that allowed user to create both encoded and decoded output files',
         url:'https://github.com/ebmalabuyo/Text-File-Data-Compression'
     },

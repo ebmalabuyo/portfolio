@@ -24,6 +24,7 @@ b {
   text-align: center;
   padding: 0;
   margin: 0;
+  width: 60%;
 }
 
 .skills h3 {
@@ -197,23 +198,30 @@ body {
 
 .github {
     color: black;
+    transition: transform 0.2s;
 }
 
 .linkedin {
-  color: black
+  color: black;
+  transition: transform 0.2s;
 }
 
 .email {
   color: black;
+  transition: transform 0.2s;
+}
+
+.email:hover, .linkedin:hover, .github:hover {
+  transform: scale(1.2);
 }
 
 .slider-icon.right {
-  margin-right: max(12%, 2rem);
+  margin-right: max(15%, 2rem);
   position: relative;
 }
 
 .slider-icon.left {
-  margin-left: max(12%, 2rem);
+  margin-left: max(15%, 2rem);
 }
 
 .slider-icon.left:hover, .slider-icon.right:hover{
@@ -234,6 +242,15 @@ footer {
   flex-direction: column;
   align-items: center;
   color: rgb(227, 115, 115);
+}
+
+@media only screen and (max-width: 660px) {
+  .slider-icon.left {
+    margin: 0;
+  }
+  .slider-icon.right {
+    margin: 0;
+  }
 }
 
 

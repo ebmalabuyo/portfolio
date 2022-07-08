@@ -9,7 +9,7 @@ export default function Footer() {
         <footer id ="four">
             <h1>Contact 👋</h1>
             <div className="logos">
-            <a href="mailto:elijahbmalabuyo@gmail.com"><FontAwesomeIcon icon={faEnvelope} size ="3x" color="black" /></a>
+            <a href="mailto:elijahbmalabuyo@gmail.com"><FontAwesomeIcon className = "email" icon={faEnvelope} size ="3x" color="black" /></a>
             <a href="https://github.com/ebmalabuyo"><FontAwesomeIcon icon={faGithub}  size ="3x" className="github" /></a>
             <a href="https://www.linkedin.com/in/emalabuyo/"><FontAwesomeIcon icon={faLinkedin}  size ="3x" className="linkedin"/></a>
             </div>

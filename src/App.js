@@ -10,6 +10,7 @@ import "./worky.css"
 import Work from "./components/work.js";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import Footer from "./components/footer.js";
 
 export default function App() {
 
@@ -64,8 +65,7 @@ export default function App() {
         <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>
       </div>
       </div>
-      <footer>
-
-      </footer>
+      <hr></hr>
+      <Footer />
     </div>
   );}

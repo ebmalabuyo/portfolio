@@ -9,7 +9,7 @@ export default function Intro(props) {
         <div className="intro--items">
             <img src = {pic} className="intro--pic"/>
             <div className="intro--text">
-                <h1 className="intro--title">Hey There! ✌️</h1>
+                <h1 className="intro--title">About Me ✌️</h1>
                 <p>Welcome to my personal website!</p>
                 <p>My name is Elijah Malabuyo :)</p>
                 <p>I am a fourth year Economics & Computer Science student at California Polytechnic State University, San Luis Obispo</p>

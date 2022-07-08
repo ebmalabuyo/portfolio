@@ -44,6 +44,7 @@ export default function App() {
     <div className="big--cont">
       <Navbar />
       <div className="Home">
+      
       </div>
       <Intro />
       <hr></hr>

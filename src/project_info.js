@@ -22,7 +22,7 @@ export default [
         desc:'Python',
         b1:'Engineered a script that modified PPM images formatted in readable text utilizing RGB structure',
         b2:'Created functions to negate colors, adjust high and low contrast, adjust grayscale, and remove primary colors',
-        b3:'Conducted unit tests on PPM image, to created unique, modified versions according to user preferences',
+        b3:'Conducted unit tests with PPM image, to creat unique, modified versions according to user preferences',
         url:'https://github.com/ebmalabuyo/ppm_image_modifier'
     }
 ]

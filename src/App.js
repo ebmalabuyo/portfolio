@@ -54,17 +54,17 @@ const slideRight =()=>{
   return (
     <div className="big--cont">
       <Navbar />
-      <div className="Home">
+      <div id="zero" className="Home">
       
       </div>
       <Intro />
       <hr></hr>
       <div className="projects--cont">
-        <h2 className="projects--title">Projects <span role = 'img'>🖥️</span></h2>
+        <h2 id = "two" className="projects--title">Projects <span role = 'img'>🖥️</span></h2>
         {projectBubbles}
       </div>
       <hr></hr>
-      <h1 className="experi">Experience 👔</h1>
+      <h1 id="three" className="experi">Experience 👔</h1>
       <div className="bigger-cont">
         <div className="main-slider-cont">
         <MdChevronLeft size={40} onClick = {slideLeft} className="slider-icon left"/>
@@ -72,7 +72,6 @@ const slideRight =()=>{
             {newInfo}
           </div>
         <MdChevronRight size={40} onClick = {slideRight} className="slider-icon right"/>
-          {/* <ReactCardSlider slides={info}/> */}
        </div>
         <div className="skills">
           <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>

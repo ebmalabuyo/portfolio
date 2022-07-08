@@ -5,7 +5,7 @@ import pic from "../images/elijah.JPG"
 export default function Intro(props) {
     return(
 
-    <div className="intro--cont">
+    <div id ="one" className="intro--cont">
         <div className="intro--items">
             <img src = {pic} className="intro--pic"/>
             <div className="intro--text">

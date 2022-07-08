@@ -48,7 +48,7 @@ body {
   background-image: url('./images/jump.JPG');
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 50rem;
+  height: 40rem;
   /* background-position: cover; */
   background-position: center center;
 
@@ -219,7 +219,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(227, 115, 115);;
+  color: rgb(227, 115, 115);
 }
 
 @media only screen and (max-width: 700px) {

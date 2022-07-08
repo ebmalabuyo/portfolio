@@ -8,9 +8,10 @@ import work_info from "./work_info.js";
 // import "./components/work_style.css"
 import "./worky.css"
 import Work from "./components/work.js";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-solid-svg-icons'
 import Footer from "./components/footer.js";
+import ReactCardSlider from 'react-card-slider-component';
+import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
 
 export default function App() {
 
@@ -25,6 +26,16 @@ export default function App() {
   /// for the work experiecne flip through section 
   var [num, setNum] = React.useState(0)
   const [info, setInfo] = React.useState(work_info)
+
+  const slideLeft =()=>{
+    var slider = document.getElementsByClassName("slider")[0];
+    slider.scrollLeft = slider.scrollLeft - 320;
+}
+
+const slideRight =()=>{
+  var slider = document.getElementsByClassName("slider")[0];
+  slider.scrollLeft = slider.scrollLeft + 320;
+}
 
 
   const newInfo = info.map(item => {
@@ -55,15 +66,16 @@ export default function App() {
       <hr></hr>
       <h1 className="experi">Experience 👔</h1>
       <div className="bigger-cont">
-      <div className="main-slider-cont">
-          <FontAwesomeIcon className="arrow-left" icon={faArrowAltCircleLeft} />
-            <div className="slider">
-              {newInfo}
-            </div>
-          <FontAwesomeIcon className="arrow-right"  icon={faArrowAltCircleRight} />
-      </div>
-      <div className="skills">
-        <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>
+        <div className="main-slider-cont">
+        <MdChevronLeft size={40} onClick = {slideLeft} className="slider-icon left"/>
+          <div className="slider">
+            {newInfo}
+          </div>
+        <MdChevronRight size={40} onClick = {slideRight} className="slider-icon right"/>
+          {/* <ReactCardSlider slides={info}/> */}
+       </div>
+        <div className="skills">
+          <h3><b>Software Skills:</b> Python, Javascript, React.js, HTML/CSS, SQL, Git, R, Microsoft Office</h3>
       </div>
       </div>
       <hr></hr>

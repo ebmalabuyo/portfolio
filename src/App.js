@@ -12,6 +12,7 @@ import { faArrowAltCircleRight, faArrowAltCircleLeft } from '@fortawesome/free-s
 import Footer from "./components/footer.js";
 import ReactCardSlider from 'react-card-slider-component';
 import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
+import Home from "./components/home.js";
 
 export default function App() {
 
@@ -54,9 +55,7 @@ const slideRight =()=>{
   return (
     <div className="big--cont">
       <Navbar />
-      <div id="zero" className="Home">
-      
-      </div>
+      <Home />
       <Intro />
       <hr></hr>
       <div className="projects--cont">
